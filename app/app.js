@@ -1,4 +1,4 @@
 angular.module('MyWebsite', ['ngRoute']);
 
-require('./controllers');
-require('./routes');
+require('app/controllers');
+require('app/routes');

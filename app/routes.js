@@ -3,7 +3,7 @@ angular.module('MyWebsite')
         $routeProvider
             // route for the home page/signin page
             .when('/', {
-                template : require('./views/home.html'),
+                template : require('./pages/home.html'),
                 controller  : 'HomeController as HC',
 
             });
