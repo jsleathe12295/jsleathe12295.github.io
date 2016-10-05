@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html ng-app="MyWebsite">
 <html lang="en">
 <head>
 
@@ -8,6 +9,7 @@
   <title>My website</title>
   <meta name="description" content="">
   <meta name="author" content="">
+  <script src="js/website.js"></script>
 
   <!-- Mobile Specific Metas
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -16,18 +18,14 @@
 
   <link rel="stylesheet" href="css/style.css">
 
-  <!-- Scripts
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-
-  <!-- Favicon
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="icon" type="image/png" href="images/favicon.png">
 
 </head>
 <h1>Under maintenance</h1>
-<body>
-
+<body ng-controller="MinCrl">
+  <div id="container">
+    <div ng-view>
+    </div>
+  </div>
 </body>
 
 </html>
