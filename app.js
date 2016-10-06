@@ -17,7 +17,7 @@ MyWebsite.config(function($routeProvider) {
 
     MyWebsite.controller('mainController', function($scope) {
 		// create a message to display in our view
-		$scope.message = 'Everyone come and see how good I look!';
+		$scope.message = 'Under Maintainence';
 	});
 
 	MyWebsite.controller('aboutController', function($scope) {
