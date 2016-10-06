@@ -6,21 +6,26 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
   <title>My website</title>
-  <script src="js/website.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+  <script src ="app/app.js"></script>
+
 
   <!-- Mobile Specific Metas
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
+<body ng-controller="mainController">
 </head>
 <h1>Under maintenance</h1>
-<body ng-controller="HomeController">
+
+
   <div id="container">
     <div ng-view>
     </div>
   </div>
-  <script src="/node_modules/angular/angular.js"></script>
-  <script src = "app.js"></script>
+
+
+
 </body>
 
 </html>

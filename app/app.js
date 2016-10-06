@@ -1,10 +1,25 @@
-var MyWebsite = angular.module('MyWebsite', ['ngRoute'])
-.config(['routeProvider', function($routeProvider)]) {
+var MyWebsite = angular.module('MyWebsite', ['ngRoute']);
+MyWebsite.config(function($routeProvider) {
         $routeProvider
             // route for the home page/signin page
-          routeProvider.when('/home', {templateUrl:'pages/home.html' });
-          routeProvider.when('/about', {templateUrl:'pages/about.html' });
-          routeProvider.otherwise({redirectTo: '/home'} });
+            .when('/', {
+    				templateUrl : 'pages/home.html',
+    				controller  : 'mainController'
+    			})
+
+    			// route for the about page
+    			.when('/about', {
+    				templateUrl : 'pages/about.html',
+    				controller  : 'aboutController'
+    			})
+    });
 
 
-            });
+    MyWebsite.controller('mainController', function($scope) {
+		// create a message to display in our view
+		$scope.message = 'Everyone come and see how good I look!';
+	});
+
+	MyWebsite.controller('aboutController', function($scope) {
+		$scope.message = 'Look! I am an about page.';
+	});
