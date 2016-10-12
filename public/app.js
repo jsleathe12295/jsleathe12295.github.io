@@ -1,5 +1,5 @@
 var MyWebsite = angular.module('MyWebsite', ['ngRoute']);
-MyWebsite.config(function($routeProvider) {
+MyWebsite.config(function($routeProvider, $locationProvider) {
         $routeProvider
             // route for the home page/signin page
             .when('/', {
@@ -12,6 +12,7 @@ MyWebsite.config(function($routeProvider) {
     				templateUrl : 'pages/about.html',
     				controller  : 'aboutController'
     			})
+           $locationProvider.html5Mode(true);
     });
 
 

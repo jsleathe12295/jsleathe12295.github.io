@@ -6,7 +6,6 @@ app.set('port', process.env.PORT || 3001);
 app.use(express.static(__dirname + '/public'));
 
 app.get('/', function(req, res) {
-  console.log("hey");
 
   fs.readFile(__dirname + '/public/main.html', function(err, data) {
 
