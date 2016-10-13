@@ -6,25 +6,16 @@ app.set('port', process.env.PORT || 3001);
 app.use(express.static(__dirname + '/public'));
 
 app.get('/', function(req, res) {
-
   fs.readFile(__dirname + '/public/main.html', function(err, data) {
-
     if (err) res.status(404).end('<h1>404</h1>');
-
     res.end(data);
-
   });
-
 });
 
 app.get('*', function(req, res) {
-
   fs.readFile(__dirname + '/public' + req.url, function(err, data) {
-
     if (err) res.status(404).end('<h1>404</h1>');
-
     res.end(data);
-
   });
 
 })
@@ -39,11 +30,6 @@ app.use(function(err, req, res, next) {
     res.status(500);
     res.render('500');
 });
-
-// app.listen(app.get('port'), function() {
-//   console.log('server started and running at http://localhost:3000');
-// })
-
 
 var server = http.createServer(app);
 
