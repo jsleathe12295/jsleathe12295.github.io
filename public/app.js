@@ -1,7 +1,7 @@
 var MyWebsite = angular.module('MyWebsite', ['ngRoute']);
 MyWebsite.config(function($routeProvider, $locationProvider) {
         $routeProvider
-            // route for the home page/signin page
+            // route for the home page
             .when('/', {
     				templateUrl : 'pages/home.html',
     				controller  : 'mainController'
@@ -12,6 +12,13 @@ MyWebsite.config(function($routeProvider, $locationProvider) {
     				templateUrl : 'pages/about.html',
     				controller  : 'aboutController'
     			})
+
+          .when('/movies', {
+    				templateUrl : 'pages/movies.html',
+    				controller  : 'moviesController'
+    			})
+
+
            $locationProvider.html5Mode(true);
     });
 
@@ -23,4 +30,7 @@ MyWebsite.config(function($routeProvider, $locationProvider) {
 
 	MyWebsite.controller('aboutController', function($scope) {
 		$scope.message = 'Look! I am an about page.';
+	});
+  MyWebsite.controller('moviesController', function($scope) {
+		$scope.message = 'Movies!';
 	});
