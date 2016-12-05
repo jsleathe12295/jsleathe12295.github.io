@@ -5,18 +5,16 @@ MyWebsite.config(function($routeProvider, $locationProvider) {
             .when('/', {
     				templateUrl : 'pages/home.html',
     				controller  : 'mainController'
-    			})
+    			}),
 
     			// route for the about page
     			.when('/about', {
     				templateUrl : 'pages/about.html',
     				controller  : 'aboutController'
+            // css: 'style.css'
     			})
 
-          .when('/movies', {
-    				templateUrl : 'pages/movies.html',
-    				controller  : 'moviesController'
-    			})
+
 
 
            $locationProvider.html5Mode(true);
