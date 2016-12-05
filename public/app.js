@@ -14,9 +14,6 @@ MyWebsite.config(function($routeProvider, $locationProvider) {
             // css: 'style.css'
     			})
 
-
-
-
            $locationProvider.html5Mode(true);
     });
 
@@ -28,7 +25,4 @@ MyWebsite.config(function($routeProvider, $locationProvider) {
 
 	MyWebsite.controller('aboutController', function($scope) {
 		$scope.message = 'Look! I am an about page.';
-	});
-  MyWebsite.controller('moviesController', function($scope) {
-		$scope.message = 'Movies!';
 	});
