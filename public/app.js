@@ -19,7 +19,7 @@ MyWebsite.config(function($routeProvider, $locationProvider) {
 
   MyWebsite.controller('mainController', function($scope) {
 		// create a message to display in our view
-		$scope.message = 'Under Maintainence';
+		$scope.message = '';
 	});
 
 	MyWebsite.controller('aboutController', function($scope) {
