@@ -22,19 +22,6 @@ img{
   margin: auto;
   width: 20%;
 }
-@media (max-width: 1200px) {
-  body {
-    font-size: 90%;
-  }
-}
-@media(max-width: 900px) {
-  body{
-    font-size: 70%;
-  }
-}
-
-
-
 
 /* NavBar */
 .NavBar {
