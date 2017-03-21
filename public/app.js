@@ -10,7 +10,7 @@ MyWebsite.config(function($routeProvider, $locationProvider) {
 		// route for the about page
 		  .when('/about', {
 			templateUrl : 'pages/about.html',
-			controller  : 'mainController'
+			controller  : 'aboutController'
 		})
 
      $locationProvider.html5Mode(true);
@@ -23,5 +23,5 @@ MyWebsite.config(function($routeProvider, $locationProvider) {
 	});
 
 	MyWebsite.controller('aboutController', function($scope) {
-		$scope.message = '';
+		$scope.message = 'Resume';
 	});

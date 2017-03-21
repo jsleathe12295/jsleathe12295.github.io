@@ -2,6 +2,7 @@ var http = require('http');
 var fs = require('fs');
 var express = require('express');
 var app = express();
+
 app.set('port', process.env.PORT || 3001);
 app.use(express.static(__dirname + '/public'));
 
@@ -18,7 +19,7 @@ app.get('*', function(req, res) {
     res.end(data);
   });
 
-})
+});
 
 app.use(function(req, res, next) {
     res.status(404);
