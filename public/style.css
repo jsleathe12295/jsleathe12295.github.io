@@ -9,9 +9,10 @@ body{
 	padding: 0;
 }
 .background{
-  background-color: #333;
+  background-color: #328CC1;
   height:auto;
   padding-top: 1px;
+  box-shadow: 10px 5px 46px black;
 }
 .Buttons{
   text-align: center;
@@ -31,6 +32,7 @@ body{
   text-align: center;
   color: white;
   font-size: 25pt;
+  font-size: italic;
 }
 
 .about{
@@ -69,8 +71,10 @@ img{
 
 }
 .fa-github:hover {
-    background-color: #FDC705;
+    background-color: #D9B310;
     font-size: 25px;
+    box-shadow: 10px 1px 10px black;
+
 
 }
 
@@ -89,8 +93,10 @@ img{
 
 }
 .fa-linkedin:hover {
-    background-color: #FDC705;
+    background-color: #D9B310;
     font-size: 25px;
+    box-shadow: 10px 1px 10px black;
+
 
 }
 a {
@@ -109,7 +115,8 @@ p > a:hover{
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
+  background-color: #1D2731;
+  box-shadow: 10px 1px 21px black;
 
 }
 .NavBar-li{
