@@ -1,8 +1,10 @@
-@import url(http://fonts.googleapis.com/css?family=Lato);
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
-
+::-webkit-scrollbar {
+  display: none;
+}
 body{
-  font: 100% georgia, sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
 	line-height: 1.2;
 	color: #555753;
 	margin: 0;
@@ -18,30 +20,21 @@ body{
   text-align: center;
 }
 .homeHeader{
+  font-family: 'Roboto';
+  font-weight: 200;
   text-align: center;
   color:white;
-
+  margin-top: 80px;
+  margin-bottom: 50px;
 }
-
-.aboutHeader{
-  text-align: left;
-  color:white;
-}
-
 .home{
   text-align: center;
   color: white;
   font-size: 25pt;
-  font-size: italic;
-}
-
-.about{
-  color: white;
 }
 .space{
   margin-top: 100px;
 }
-
 img{
   border-radius: 100%;
   display: block;
@@ -51,61 +44,105 @@ img{
   z-index: 10;
   top: 115px;
   left: 729px;
+}
+h1{
+  font-family: 'Roboto';
+  font-weight: 200;
+  text-align: left;
+  padding: 0;
+  margin: 0;
+}
 
+/*About Page*/
+.aboutCards{
+  background-color: #328CC1;
+  width: 74.57627%;
+  text-align: left;
+  margin-bottom: 40px;
+  height: auto;
+  display: inline-block;
+  box-shadow: 3px 6px 21px black;
+
+}
+.cardContainer{
+  overflow-y: auto;
+  height: 700px;
+}
+.about{
+  color: white;
+  font-family: 'Roboto';
+  font-weight: 200;
+  text-align: center;
+  width:50%;
+  height:50%;
+  margin-left: 25%;
+  box-shadow: 3px 6px 21px black;
 
 
 }
+.aboutHeader{
+  margin-top: 70px;
+  margin-bottom: 25px;
+  text-align: center;
+  font-family: 'Roboto';
+  font-weight: 200;
+  color:white;
+}
+li{
+
+}
+p span{
+  display: block;
+}
+
 /*social buttons*/
 
 .fa-github {
-    padding:10px 14px;
-    -o-transition:.5s;
-    -ms-transition:.5s;
-    -moz-transition:.5s;
-    -webkit-transition:.5s;
-    transition: .5s;
-    background-color: #322f30;
-    font-size: 25px;
-    margin-left: 10px;
-    margin-bottom: 15px;
-
+  padding:10px 14px;
+  -o-transition:.5s;
+-ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transition: .5s;
+  background-color: #322f30;
+  font-size: 25px;
+  margin-left: 10px;
+  margin-bottom: 15px;
 }
 .fa-github:hover {
-    background-color: #D9B310;
-    font-size: 25px;
-    box-shadow: 10px 1px 10px black;
-
-
+  background-color: #D9B310;
+  font-size: 25px;
+  box-shadow: 10px 1px 10px black;
 }
 
 .fa-linkedin {
-    padding:10px 14px;
-    -o-transition:.5s;
-    -ms-transition:.5s;
-    -moz-transition:.5s;
-    -webkit-transition:.5s;
-    transition: .5s;
-    background-color: #322f30;
-    font-size: 25px;
-    margin-right: 10px;
-    margin-bottom: 15px;
+  padding:10px 14px;
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transition: .5s;
+  background-color: #322f30;
+  font-size: 25px;
+  margin-right: 10px;
+  margin-bottom: 15px;
 
 
 }
 .fa-linkedin:hover {
-    background-color: #D9B310;
-    font-size: 25px;
-    box-shadow: 10px 1px 10px black;
+  background-color: #D9B310;
+  font-size: 25px;
+  box-shadow: 10px 1px 10px black;
 
 
 }
 a {
-    text-decoration: none;
-    color: #fff;
+  text-decoration: none;
+  color: #fff;
 }
 p > a:hover{
-    color: #d9d9d9;
-    text-decoration:  underline;
+  color: #d9d9d9;
+  text-decoration:  underline;
 }
 
 /* NavBar */
@@ -117,7 +154,9 @@ p > a:hover{
   overflow: hidden;
   background-color: #1D2731;
   box-shadow: 10px 1px 21px black;
-
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 .NavBar-li{
   float:left;
@@ -129,12 +168,108 @@ p > a:hover{
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+
+
 }
 
 .NavBar-li .NavBar-a:hover{
   background-color: #111;
-  text-decoration: overline underline;
+  text-decoration: overline;
   text-decoration-color: white;
+}
+/*fonts*/
+@font-face {
+  font-family: 'Roboto';
+  font-style: bold;
+  font-weight: 900;
+  src: local('Roboto-Black'),
+       url(../../fonts/Roboto-Black.ttf);
+}
 
+@font-face {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 900;
+  src: local('Roboto-BlackItalic'),
+       url(../../fonts/Roboto-BlackItalic.ttf);
+}
 
+@font-face {
+  font-family: 'Roboto';
+  font-style: bold;
+  font-weight: 800;
+  src: local('Roboto-Bold'),
+       url(../../fonts/Roboto-Bold.ttf);
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 800;
+  src: local('Roboto-BoldItalic'),
+       url(../../fonts/Roboto-BoldItalic.ttf);
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Roboto-Italic'),
+       url(../../fonts/Roboto-Italic.ttf);
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Roboto-Light'),
+       url(../../fonts/Roboto-Light.ttf);
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 300;
+  src: local('Roboto-LightItalic'),
+       url(../../fonts/Roboto-LightItalic.ttf);
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: medium;
+  font-weight: 500;
+  src: local('Roboto-Medium'),
+       url(../../fonts/Roboto-Medium.ttf);
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 500;
+  src: local('Roboto-MediumItalic'),
+       url(../../fonts/Roboto-MediumItalic.ttf);
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto-Regular'),
+       url(../../fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: thin;
+  font-weight: 200;
+  src: local('Roboto-Thin'),
+       url(../../fonts/Roboto-Thin.ttf);
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 200;
+  src: local('Roboto-ThinItalic'),
+       url(../../fonts/Roboto-ThinItalic.ttf);
 }
