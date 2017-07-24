@@ -9,7 +9,7 @@ MyWebsite.config(function($routeProvider, $locationProvider) {
 
 		// route for the about page
 		  .when('/about', {
-			templateUrl : 'pages/about.html',
+			templateUrl : 'Resume.md',
 			controller  : 'aboutController'
 		})
 
