@@ -6,12 +6,12 @@ body{
   font-family: 'helvetica neue';
   font-weight: 100;
 	line-height: 1.2;
-	color: #ecf0f1;
+	color: #2980b9;
 	margin: 0;
 	padding: 0;
 }
 .background{
-  background-color: #ecf0f1;
+  background-color: #3498db;
   height:auto;
   padding-top: 1px;
   box-shadow: 10px 5px 46px black;
@@ -304,7 +304,7 @@ p > a:hover{
 }
 
 .NavBar-li .NavBar-a:hover{
-  background-color: #EF5350;
+  background-color: #D9B310;
   text-decoration: overline;
   text-decoration-color: white;
   color: white;
